@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Danielle Santos</h1>
+                <!-- Adicionando os ícones -->
+                <div class="social-icons">
+                    <!-- Ícone do LinkedIn -->
+                    <a href="https://www.linkedin.com/in/danielle-santos-37b15619b/" target="_blank" title="Meu LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Ícone do WhatsApp -->
+                    <a href="https://wa.me/5511930183511" target="_blank" title="Meu WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+                    </a>
+                </div>
+            </header>
+              </header>
+           <div class="container-imagem">
+            <img src=images/minha-foto.jpg.jpg alt="Minha Foto">    
+        </div>       
+     <section id="Sobre">
+                <button onclick="toggleSobre()">Sobre Mim</button>
+                <div id="infoSobre" class="baloon" style="display: none;">
+        <p>Sobre Mim
+
+            Tenho 26 anos e, atualmente, estou no segundo semestre do curso de Análise e Desenvolvimento de Sistemas na faculdade Anhembi Morumbi, no formato EAD.  
+        Decidi migrar para a área de programação como um desafio pessoal, pois sempre tive muita curiosidade e interesse pela área.  
+        Sinto que a programação oferece um poder único: o poder de criação, onde podemos transformar nossas ideias e imaginação em realidade.
+    </p>
+    <br>
+    <p>
+        Atualmente, estou na transição de carreira, saindo da área comercial, onde trabalho com compras e vendas.  
+        Essa experiência me ajudou a desenvolver habilidades de comunicação, negociação e expressão, e tenho plena confiança de que essas competências serão essenciais para a minha jornada no mundo da tecnologia.
+    </p>
+    <br>
+    <p>
+        Fora do universo profissional, sou apaixonada por leitura, um dos meus hobbies que mais ocupa meu tempo, pois, através dos livros, posso viver diversas vidas e viajar para diferentes mundos.  
+        Também gosto muito de pintar nas horas vagas e sou fã de séries e animes.
+    </p>
+    <br>
+    <p>
+    <br>
+    Esses são apenas alguns aspectos da minha vida pessoal, e acredito que cada experiência e paixão contribui para meu crescimento como profissional e ser humano.</p>
+    </div>
+            </section>
+        <section id="conhecimentos">
+            <button onclick="toggleConhecimentos()">Conhecimentos</button>
+            <div id="infoConhecimentos" style="display: none;">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>SQL Server</li>
+                </ul>
+            </div>
+            </section>
+        <section id="projetos">
+            <button onclick="toggleProjetos()">Projetos</button>
+    <div id="infoProjetos" style="display: none;">
+        <ul>
+            <li><a href="https://link-do-seu-projeto1.com" target="_blank">Projeto 1</a></li>
+            <li><a href="https://link-do-seu-projeto2.com" target="_blank">Projeto 2</a></li>
+            <li><a href="https://link-do-seu-projeto3.com" target="_blank">Projeto 3</a></li>
+        </ul>
+    </div>
+    </section>
+    <footer>
+        <p>Contato: Danielle.d.santos@outlook.com</p>
+    </footer>
+</body>
+<script>
+    function toggleSobre() {
+        const info = document.getElementById("infoSobre");
+        info.style.display = (info.style.display === "none") ? "block" : "none";
+    }
+
+    function toggleConhecimentos() {
+        const info = document.getElementById("infoConhecimentos");
+        info.style.display = (info.style.display === "none") ? "block" : "none";
+    }
+</script>
+<script>
+    function toggleSobre() {
+        const info = document.getElementById("infoSobre");
+        info.style.display = (info.style.display === "none") ? "block" : "none";
+    }
+
+    function toggleConhecimentos() {
+        const info = document.getElementById("infoConhecimentos");
+        info.style.display = (info.style.display === "none") ? "block" : "none";
+    }
+
+    function toggleProjetos() {
+        const info = document.getElementById("infoProjetos");
+        info.style.display = (info.style.display === "none") ? "block" : "none";
+    }
+</script>
+
+</html>

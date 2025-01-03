@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e2ed;
+    color: #f3d339;;
+    padding: 20px;
+        background-image: url('images/foto-fundo.jpg.jpg'); /* Caminho da imagem */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4118b;
+    color: #f3d339;
+    margin-bottom: 30px;
+    border-radius: 15px; /* Ajuste o valor para mais ou menos arredondamento */
+    /* Estilo para o cabeçalho e botões */
+header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav button {
+    margin: 5px;
+  }
+  
+  /* Estilo apenas para centralizar a imagem */
+  .container-imagem {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 80vh; /* Usa 80% da altura da janela */
+  }
+  
+  .container-imagem img {
+    max-width: 20%; /* Limita o tamanho da imagem */
+    height: auto;
+  }
+  
+
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+/* Estilo para o cabeçalho e botões */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Centraliza o contêiner da imagem */
+.container-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 15px; /* Espaço entre a imagem e os botões */
+}
+
+/* Estilo da imagem */
+.container-imagem img {
+  width: 380px; /* Ajuste o tamanho conforme necessário */
+  height: 380px;
+  border-radius: 50%; /* Deixa a imagem circular */
+  border: 5px solid #f4118b; /* Adiciona uma borda, você pode ajustar a cor e espessura */
+  object-fit: cover; /* Garante que a imagem se ajuste bem dentro do círculo */
+}
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #f3d339;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #f3d339;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #f3d339;
+}
+
+#Sobre button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #f3d339;
+    background-color: #f4118b; /* Escolha uma cor para o botão de Projetos */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+#Sobre button:hover {
+    background-color: #f4118b;
+    background-color: hsl(#0a0a0a); /* Cor de fundo do balão */
+    
+}
+#infoSobre {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: ;
+    border-radius: 8px;
+    display: none;
+}
+
+#conhecimentos button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #f3d339; /* Adicionado ponto e vírgula */
+    background-color: #f4118b; /* Adicionado ponto e vírgula */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#conhecimentos button:hover {
+    background-color: #f4118b;
+}
+
+/* Estilo para a Seção de Conhecimentos */
+#infoConhecimentos {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f3d339
+    border-radius: 8px;
+    display: none;
+}
+#projetos button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #f3d339;
+    background-color: #f4118b; /* Escolha uma cor para o botão de Projetos */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color #f3d339;
+}
+
+#projetos button:hover {
+    background-color: #f4118b
+}
+
+/* Estilo para a Seção de Projetos */
+#infoProjetos {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: ;
+    border-radius: 8px;
+    display: none;
+}
+function toggleBaloon() {
+    const baloon = document.getElementById("baloon");
+    if (baloon.style.display === "block") {
+        baloon.style.display = "none"; // Esconde o balão se já estiver visível
+    } else {
+        baloon.style.display = "block"; // Mostra o balão
+    }
+}
+.social-icons {
+    display: flex; /* Deixa os ícones lado a lado */
+    gap: 15px; /* Espaçamento entre eles */
+}
+
+.social-icons a {
+    color: #f3d339; /* Cor do ícone */
+    font-size: 1.5em; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+}
+/* Estilo do balão (infoSobre) */
+.baloon {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Permite posicionar o balão */
+    background-color: #000000; /* Cor de fundo */
+    color: #f3d339; /* Cor do texto */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 850px; /* Largura máxima */
+    z-index: 10; /* Fica acima de outros elementos */
+    top: 50px; /* Ajusta a posição vertical */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza o balão */
+}
+
+/* Triângulo para o balão */
+.baloon::before {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Aponta para o botão */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f3d339
+     transparent; /* Triângulo branco */
+}
+function toggleSobre() {
+    const infoSobre = document.getElementById("infoSobre");
+    infoSobre.style.display = infoSobre.style.display === "block" ? "none" : "block";
+}
+
+
